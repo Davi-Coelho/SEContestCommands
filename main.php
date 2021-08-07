@@ -1,11 +1,9 @@
 <?php
-/*
-Credentials structure:
-$key = "random string";
-$bearer = "SE JWT token";
-*/
+
+$key = $_ENV["KEY"];
+$bearer = $_ENV["JWT_TOKEN"];
+
 ini_set('html_errors', false);
-require_once("credentials.php");
 
 if (isset($_GET["key"], $_GET["args"]) && $_GET["key"] == $key)
 {
