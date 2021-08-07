@@ -4,7 +4,7 @@ $key = $_ENV["KEY"];
 $bearer = $_ENV["JWT_TOKEN"];
 
 ini_set('html_errors', false);
-echo $key;
+
 if (isset($_GET["key"], $_GET["args"]) && $_GET["key"] == $key)
 {
   require_once("vendor/autoload.php");
